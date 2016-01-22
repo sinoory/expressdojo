@@ -56,5 +56,6 @@ app.use(function(err, req, res, next) {
     });
 });
 
+app.listen(3002);
 
 module.exports = app;
