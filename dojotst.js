@@ -12,7 +12,7 @@ app.set('views', path.join(__dirname, '/')); //set views dir to root dir
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + '/pub/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -38,6 +38,8 @@ app.use('/mbGallery', require('./routes/dojo/mbGallery.js'));
 
 app.use(express.static(path.join(__dirname, 'dojoprj/todoApp/')));
 app.use('/todoApp', require('./routes/dojo/todoAppR.js'));
+
+app.use('/help', require('./routes/help.js'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
