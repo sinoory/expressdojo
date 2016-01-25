@@ -24,6 +24,9 @@ app.use('/dj/gauge', require('./routes/dojo/gauge'));
 app.use('/dj/slide', require('./routes/dojo/slide'));
 app.use('/dj/crop', require('./routes/dojo/crop.js'));
 
+app.use(express.static(path.join(__dirname, 'dojoprj/dynamicChart/')));
+app.use('/dn', require('./routes/dojo/dynamicChart.js'));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
