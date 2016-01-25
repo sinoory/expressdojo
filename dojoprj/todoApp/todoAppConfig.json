@@ -8,7 +8,7 @@
 	// This parameter allows to configure the loader itself and specify for example where custom modules can be found.
 	"loaderConfig": {
 		"paths": {
-			"todoApp": "../demos/todoApp"
+			"todoApp": "../dojoprj/todoApp"
 		}
 	},
 

@@ -1,6 +1,6 @@
 require(["dojox/app/main", "dojox/json/ref", "dojo/sniff"],
 	function(Application, json, has){
-	var configurationFile = "./config.json";
+	var configurationFile = "./todoAppConfig.json";
 	require(["dojo/text!"+configurationFile], function(configJson){
 		var width = window.innerWidth || document.documentElement.clientWidth;
 		if(width <= 600){
