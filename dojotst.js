@@ -30,6 +30,9 @@ app.use('/dn', require('./routes/dojo/dynamicChart.js'));
 app.use(express.static(path.join(__dirname, 'dojoprj/fisheye/')));
 app.use('/fisheye', require('./routes/dojo/fisheye.js'));
 
+app.use(express.static(path.join(__dirname, 'dojoprj/gfxserialization/')));
+app.use('/gfxs', require('./routes/dojo/gfxs.js'));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
