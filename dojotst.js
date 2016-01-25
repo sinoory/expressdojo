@@ -36,6 +36,9 @@ app.use('/gfxs', require('./routes/dojo/gfxs.js'));
 app.use(express.static(path.join(__dirname, 'dojoprj/mobileGallery/')));
 app.use('/mbGallery', require('./routes/dojo/mbGallery.js'));
 
+app.use(express.static(path.join(__dirname, 'dojoprj/todoApp/')));
+app.use('/todoApp', require('./routes/dojo/todoAppR.js'));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
