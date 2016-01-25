@@ -27,6 +27,9 @@ app.use('/dj/crop', require('./routes/dojo/crop.js'));
 app.use(express.static(path.join(__dirname, 'dojoprj/dynamicChart/')));
 app.use('/dn', require('./routes/dojo/dynamicChart.js'));
 
+app.use(express.static(path.join(__dirname, 'dojoprj/fisheye/')));
+app.use('/fisheye', require('./routes/dojo/fisheye.js'));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
