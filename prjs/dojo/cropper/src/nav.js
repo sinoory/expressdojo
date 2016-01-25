@@ -74,7 +74,8 @@ dojo.require("dojox.image._base");
 					d.attr(n, {
 						// this is janktastic -- we only know the thumb url
 						// and a pattern between it and the full url. fragile.
-						href: arr[i].replace(/\/thumb/,"").replace(/t\./, ".")
+						href: arr[i].replace(/\/thumb/,"XXX").replace(/t\./, ".")
+						//href: arr[i].replace(/\/thumb/,"../prjs/dojo/cropper/images/").replace(/t\./, ".")
 					})
 				});
 				
@@ -98,7 +99,7 @@ dojo.require("dojox.image._base");
 		d.xhrGet({
 			
 			// load a list of additional images from a url:
-			url:"images.json", handleAs:"json",
+			url:"../prjs/dojo/cropper/images.json", handleAs:"json",
 
 			// handle the response data from the url:
 			load: function(resp){
@@ -107,7 +108,7 @@ dojo.require("dojox.image._base");
 				var items = resp.images, needed = [], npages = (items.length / 6);
 				var thumbs = d.map(items, function(item){
 					var thumb = item.src.replace(/\./, "t.");
-					return "images/thumb/" + thumb;
+					return "../prjs/dojo/cropper/images/thumb/" + thumb;
 				});
 				dojox.image.preload(thumbs);
 				
