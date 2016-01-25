@@ -1,4 +1,4 @@
-dojo.provide("demos.cropper.src.nav");
+dojo.provide("prjs.dojo.cropper.src.nav");
 
 dojo.require("dojo.fx");
 dojo.require("dojo.fx.easing");

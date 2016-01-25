@@ -1,4 +1,4 @@
-dojo.provide("demos.cropper.src.Preview");
+dojo.provide("prjs.dojo.cropper.src.Preview");
 
 dojo.require("dijit._Widget");
 dojo.require("dojo.dnd.move");

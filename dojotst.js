@@ -22,6 +22,7 @@ app.use(express.static(path.join(__dirname, '/')));
 app.use('/', require('./routes/index'));
 app.use('/dj/gauge', require('./routes/dojo/gauge'));
 app.use('/dj/slide', require('./routes/dojo/slide'));
+app.use('/dj/crop', require('./routes/dojo/crop.js'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,8 +1,8 @@
 dojo.provide("demos.cropper.src");
 
-dojo.require("demos.cropper.src.Preview");
+dojo.require("prjs.dojo.cropper.src.Preview");
 dojo.require("dojox.analytics.Urchin");
-dojo.require("demos.cropper.src.nav");
+dojo.require("prjs.dojo.cropper.src.nav");
 
 ;(function(d, $){
 	
