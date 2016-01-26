@@ -39,6 +39,9 @@ app.use('/mbGallery', require('./routes/dojo/mbGallery.js'));
 app.use(express.static(path.join(__dirname, 'dojoprj/todoApp/')));
 app.use('/todoApp', require('./routes/dojo/todoAppR.js'));
 
+app.use(express.static(path.join(__dirname, 'dojoprj/bezier/')));
+app.use('/bezier', require('./routes/dojo/bezierR.js'));
+
 app.use('/help', require('./routes/help.js'));
 
 // catch 404 and forward to error handler
