@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/')));
 
-app.use('/', require('./routes/index'));
+app.use('/', require('./routes/index.js'));
 app.use('/dj/gauge', require('./routes/dojo/gauge'));
 app.use('/dj/slide', require('./routes/dojo/slide'));
 app.use('/dj/crop', require('./routes/dojo/crop.js'));
