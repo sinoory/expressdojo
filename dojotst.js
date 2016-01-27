@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/')));
 
 app.use('/', require('./routes/index.js'));
-app.use('/dj/gauge', require('./routes/dojo/gauge'));
+app.use('/dj/gauge', require('./routes/dojo/gauge.js'));
 app.use('/dj/slide', require('./routes/dojo/slide'));
 app.use('/dj/crop', require('./routes/dojo/crop.js'));
 
@@ -41,6 +41,9 @@ app.use('/todoApp', require('./routes/dojo/todoAppR.js'));
 
 app.use(express.static(path.join(__dirname, 'dojoprj/bezier/')));
 app.use('/bezier', require('./routes/dojo/bezierR.js'));
+
+app.use(express.static(path.join(__dirname, 'cmpdojoprj/mobileGauges/')));
+app.use('/gauge', require('./routes/dojo/cgauge.js'));
 
 app.use('/help', require('./routes/help.js'));
 

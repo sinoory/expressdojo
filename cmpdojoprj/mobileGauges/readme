@@ -1,4 +1,15 @@
 
 sin@nfs ~/wkspace/prjs/web/dojo/dojo-release-1.10.4-src $ ./util/buildscripts/build.sh profile=demos/mobileGauges/demo.profile.js action=release releaseName=myDojo optimize=shrinksafe cssOptimize=comments.keepLines
 
+the release/myDojo/demos/mobileGauges/ request reduce from 188->10
+
 sin@nfs ~/wkspace/prjs/web/dojo/dojo-release-1.10.4-src $ cp release/myDojo/demos/mobileGauges/ /mnt/fd/home/sin/work/html/http/djtst/cmpdojoprj -rf
+
+=============add to route===============
+cmpdojoprj/mobileGauges/cgauge.ejs:
+<script type="text/javascript" src="cmpdojoprj/mobileGauges/src.js"></script>
+use cmpdojoprj/mobileGauges/src.js to find the right src.js
+http will be Request URL:http://localhost:3005/cmpdojoprj/mobileGauges/src.js	
+
+http://localhost:3005/gauge : 9 request
+
