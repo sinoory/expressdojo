@@ -1,0 +1,4 @@
+
+sin@nfs ~/wkspace/prjs/web/dojo/dojo-release-1.10.4-src $ ./util/buildscripts/build.sh profile=demos/mobileGauges/demo.profile.js action=release releaseName=myDojo optimize=shrinksafe cssOptimize=comments.keepLines
+
+sin@nfs ~/wkspace/prjs/web/dojo/dojo-release-1.10.4-src $ cp release/myDojo/demos/mobileGauges/ /mnt/fd/home/sin/work/html/http/djtst/cmpdojoprj -rf
