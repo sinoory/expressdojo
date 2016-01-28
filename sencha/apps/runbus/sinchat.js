@@ -37,7 +37,7 @@ Ext.define('Sin.ChatItem',{
     },
     constructor:function(){
         this.callParent(arguments);
-        var img = Ext.create('Ext.Img', {src:'imgs/1.png',width:20,height:20});
+        var img = Ext.create('Ext.Img', {src:'sencha/apps/runbus/imgs/1.png',width:20,height:20});
         if(this.getMe()){
             this.add(img);
             this.add(Ext.create('Ext.Label',{html:this.getWho()}));
