@@ -45,6 +45,9 @@ app.use('/bezier', require('./routes/dojo/bezierR.js'));
 app.use(express.static(path.join(__dirname, 'cmpdojoprj/mobileGauges/')));
 app.use('/gauge', require('./routes/dojo/cgauge.js'));
 
+app.use(express.static(path.join(__dirname, 'sencha/')));
+app.use('/sclist', require('./routes/sencha/sclist.js'));
+
 app.use('/help', require('./routes/help.js'));
 
 // catch 404 and forward to error handler
