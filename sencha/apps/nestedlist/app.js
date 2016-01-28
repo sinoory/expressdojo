@@ -136,7 +136,8 @@ Ext.application({
             autoLoad: true,
             proxy: {
                 type: 'ajax',
-                url: 'http://121.43.234.157:5050/source.json'
+                //url: 'http://121.43.234.157:5050/source.json'
+                url: 'sencha/apps/nestedlist/source.json'
             }
         });
 

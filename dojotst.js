@@ -47,6 +47,7 @@ app.use('/gauge', require('./routes/dojo/cgauge.js'));
 
 app.use(express.static(path.join(__dirname, 'sencha/')));
 app.use('/sclist', require('./routes/sencha/sclist.js'));
+app.use('/scnestlist', require('./routes/sencha/scnestlist.js'));
 app.use('/scrunbus', require('./routes/sencha/scrunbus.js'));
 
 app.use('/help', require('./routes/help.js'));
